@@ -1,0 +1,57 @@
+/* Header nav & menu */
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.menu {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.burger {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+@media (max-width: 750px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    margin-top: 1rem;
+    position: absolute;
+    right: 2rem;
+    top: 4rem;
+    background-color: #f2f2f2;
+    border: 1px solid #333;
+    padding: 1rem;
+  }
+
+  .menu.show {
+    display: flex;
+  }
+
+  .burger {
+    display: block;
+  }
+}
