@@ -31,13 +31,25 @@
       <h1>Välkommen till BästKatt</h1>
       <p>Lab 3 går ut på att använda SCSS för att ge stil åt en webbplats.</p>
       <p>Jag har valt att göra en enkel rankingsajt där användare kan rösta på bäst katt.</p>
-      <p>Det finns bara några få bilder att rösta på, och resultat sparas bara i localstorage.</p>
+      <p>Det finns bara några få bilder att rösta på, och resultaten sparas bara per session.</p>
 
       <hr>
 
-      <section id="tableSection">
+      <div id="votingArea">
 
-      </section>
+        <h2>Rösta här</h2>
+
+        <div class="image-container">
+          <img id="img1" class="vote-image" />
+          <img id="img2" class="vote-image" />
+        </div>
+
+        <div class="controls">
+          <button id="voteBtn" disabled>Rösta</button>
+          <button id="resultsBtn">Visa Resultat</button>
+        </div>
+
+      </div>
 
     </main>
   </body>
