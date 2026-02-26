@@ -1,3 +1,5 @@
+@use '_base' as *;
+
 /* Header nav & menu */
 
 nav {
@@ -8,14 +10,21 @@ nav {
 
 nav a {
   text-decoration: none;
-  color: #333;
+  color: inherit;
+
+  &:hover {
+    background-color: darken($light-bg, 10%);
+    text-decoration: underline;
+  }
+
 }
 
-nav a:hover {
-  text-decoration: underline;
+.menu a {
+  padding: 4px 8px;
+  border-radius: 12px;
 }
 
-.logo {
+.logo a {
   font-weight: bold;
   font-size: 1.5rem;
 }
@@ -54,6 +63,10 @@ nav a:hover {
   .burger {
     display: block;
   }
+}
+
+#dark-toggle {
+  cursor: pointer;
 }
 
 
