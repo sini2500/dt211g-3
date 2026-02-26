@@ -10,6 +10,14 @@ $dark-primary: #8338ec;
 $dark-secondary: #8338ec;
 $dark-accent: #8338ec;
 
+@mixin screensize($size) {
+  @if $size == mobile {
+    @media (max-width: 750px) {
+      @content;
+    }
+  }
+}
+
 body {
   background-color: $light-bg;
   color: $light-text;

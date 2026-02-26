@@ -19,6 +19,12 @@ nav a {
 
 }
 
+body.dark nav a {
+  &:hover {
+    background-color: darken($dark-bg, 10%);
+  }
+}
+
 .menu a {
   padding: 4px 8px;
   border-radius: 12px;
@@ -43,7 +49,7 @@ nav a {
   border: none;
 }
 
-@media (max-width: 750px) {
+@include screensize(mobile) {
   .menu {
     display: none;
     flex-direction: column;
@@ -51,9 +57,14 @@ nav a {
     position: absolute;
     right: 2rem;
     top: 4rem;
-    background-color: #f2f2f2;
-    border: 1px solid #333;
+    background-color: $light-bg;
+    border: 1px solid $light-text;
     padding: 1rem;
+  }
+
+  body.dark .menu  {
+    background-color: $dark-bg;
+    border: 1px solid $dark-text;
   }
 
   .menu.show {
@@ -62,7 +73,7 @@ nav a {
 
   .burger {
     display: block;
-  }
+  } 
 }
 
 #dark-toggle {
@@ -77,6 +88,13 @@ nav a {
   gap: 3rem;
   justify-content: start;
   margin: 2rem 0;
+}
+
+@include screensize(mobile) {
+  .image-container {
+    flex-wrap:wrap;
+    gap: 1.5rem;
+  }
 }
 
 .vote-image {
