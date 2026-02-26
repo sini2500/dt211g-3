@@ -126,6 +126,7 @@ body.dark nav a {
 
   &:disabled {
     cursor: not-allowed;
+    opacity: 0.75;
   }
 }
 
@@ -135,13 +136,9 @@ body.dark nav a {
 }
 
 body.dark .btn-primary {
-  @extend .btn;
   background-color: $dark-bg;
   color: $dark-text;
   border-color: $dark-text;
-  &:disabled {
-    text-decoration: line-through;
-  }
 }
 
 

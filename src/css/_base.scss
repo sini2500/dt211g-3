@@ -1,14 +1,8 @@
 $light-bg: #eee;
 $light-text: #333;
-$light-primary: #3a86ff;
-$light-secondary: #3a86ff;
-$light-accent: #3a86ff;
 
 $dark-bg: #333;
 $dark-text: #eee;
-$dark-primary: #8338ec;
-$dark-secondary: #8338ec;
-$dark-accent: #8338ec;
 
 @mixin screensize($size) {
   @if $size == mobile {
