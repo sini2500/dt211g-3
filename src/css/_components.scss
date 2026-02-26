@@ -97,11 +97,35 @@ nav a {
   }
 }
 
-button {
+/* buttons */
+
+.btn {
   padding: 0.5rem 1rem;
   margin-right: 1rem;
   font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+
+  &:disabled {
+    cursor: not-allowed;
+  }
 }
+
+.btn-primary {
+  @extend .btn;
+  background-color: $light-bg;
+}
+
+body.dark .btn-primary {
+  @extend .btn;
+  background-color: $dark-bg;
+  color: $dark-text;
+  border-color: $dark-text;
+  &:disabled {
+    text-decoration: line-through;
+  }
+}
+
 
 /* results table */
 th, td {
