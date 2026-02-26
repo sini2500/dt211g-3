@@ -49,6 +49,11 @@ body.dark nav a {
   border: none;
 }
 
+body.dark .burger {
+  color: $dark-text;
+}
+
+
 @include screensize(mobile) {
   .menu {
     display: none;
