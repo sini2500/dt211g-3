@@ -10,12 +10,12 @@ Lab 3 går ut på att använda SCSS för att ge stil åt en webbplats.
 
 Jag har valt att göra en enkel rankingsajt där användare kan rösta på bäst katt.
 
-Det finns bara några få bilder att rösta på, och resultat sparas bara per session.
+SASS-koden finns uppdelad i 5 filer under src/css/.
 
-Bilderna visas slumpvis, två i taget.
+Variabler används för text och bakgrundsfärg.
 
-Användaren ska klicka på en bild, som markeras tydligt med scss, och sedan klicka "rösta".
+Responsivitet via @mixin screensize($size).
 
-Nya bilder visas sedan för nästa röstning.
+Knapparna använder @extends.
 
-När användaren tröttnat och klickar på "visa resultat" så visas en tabell med poängen.
+Färgbyte via knapp i menyn som sätter .dark klass på body-elementet.
